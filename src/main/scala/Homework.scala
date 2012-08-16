@@ -9,4 +9,10 @@ object Homework {
   def isNaughty(text: String) = false
 
   def modulo42(ints: Int*) = Seq()
+
+  def locationOf(result: Response): Option[String] = {
+    None
+  }
 }
+
+case class Response(statusCode: Int, headers: Map[String, String])
